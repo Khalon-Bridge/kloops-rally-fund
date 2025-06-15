@@ -1,4 +1,3 @@
-
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -188,8 +187,7 @@ const HowItWorks = () => {
           <div className="text-center mt-8">
             <Button 
               size="lg" 
-              variant="outline"
-              className="border-kloops-green text-kloops-green hover:bg-kloops-green hover:text-white"
+              className="bg-kloops-green hover:bg-kloops-green/90 text-white"
             >
               View API Docs
             </Button>
