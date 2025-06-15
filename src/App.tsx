@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import CreateCampaign from "./pages/CreateCampaign";
 import CampaignPage from "./pages/CampaignPage";
 import AdminDashboard from "./pages/AdminDashboard";
+import HowItWorks from "./pages/HowItWorks";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/create" element={<CreateCampaign />} />
           <Route path="/campaign/:id" element={<CampaignPage />} />
           <Route path="/admin" element={<AdminDashboard />} />

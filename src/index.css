@@ -36,6 +36,11 @@
     --ring: 217 91% 60%;
 
     --radius: 0.5rem;
+
+    /* Kloops custom colors */
+    --kloops-blue: #2563eb;
+    --kloops-green: #059669;
+    --kloops-orange: #ea580c;
   }
 
   .dark {
@@ -103,5 +108,50 @@
   .glass-effect {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Kloops color utilities */
+  .bg-kloops-blue {
+    background-color: var(--kloops-blue);
+  }
+
+  .bg-kloops-green {
+    background-color: var(--kloops-green);
+  }
+
+  .bg-kloops-orange {
+    background-color: var(--kloops-orange);
+  }
+
+  .text-kloops-blue {
+    color: var(--kloops-blue);
+  }
+
+  .text-kloops-green {
+    color: var(--kloops-green);
+  }
+
+  .text-kloops-orange {
+    color: var(--kloops-orange);
+  }
+
+  .border-kloops-blue {
+    border-color: var(--kloops-blue);
+  }
+
+  .border-kloops-green {
+    border-color: var(--kloops-green);
+  }
+
+  .border-kloops-orange {
+    border-color: var(--kloops-orange);
+  }
+
+  .hover\:bg-kloops-blue\/90:hover {
+    background-color: rgb(37 99 235 / 0.9);
+  }
+
+  .hover\:bg-kloops-green:hover {
+    background-color: var(--kloops-green);
   }
 }
