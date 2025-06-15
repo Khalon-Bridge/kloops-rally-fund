@@ -10,36 +10,36 @@ import { Badge } from "@/components/ui/badge";
 const PricingFAQ = () => {
   const faqs = [
     {
-      question: "When do I pay fees?",
-      answer: "You only pay fees when you successfully receive donations. If your campaign doesn't raise any money, you pay nothing at all."
+      question: "Why do donors pay processing fees?",
+      answer: "Complete transparency and recipient benefit. This ensures recipients get the maximum amount (98.5%) while donors have full visibility into what they're paying and why. Traditional platforms hide these costs, reducing what recipients receive."
+    },
+    {
+      question: "Is 1.5% the total fee?",
+      answer: "No, 1.5% is just our platform fee taken from the recipient's amount. Processing fees are separate, transparent, and paid by donors. This way recipients know exactly what they'll receive (98.5%) while donors can choose their payment method and associated fees."
+    },
+    {
+      question: "Can donors choose to pay the platform fee too?",
+      answer: "We're working on an optional tip feature that will allow donors to cover the platform fee as well, meaning recipients would receive 100% of the intended donation amount."
+    },
+    {
+      question: "What if donors don't want to pay processing fees?",
+      answer: "Donors can choose bank transfer (ACH) for minimal fees (just $0.50 flat fee) on larger donations. This is often the most economical option for donations over $100."
+    },
+    {
+      question: "How does this compare to other platforms?",
+      answer: "Recipients keep more money with us (98.5% vs ~97.1% with GoFundMe), and donors have complete fee transparency and payment method choice. Other platforms hide processing costs in their platform fees."
     },
     {
       question: "Are there any hidden costs?",
-      answer: "Absolutely not. Our only fee is 2.4% + $0.30 per donation received. No setup fees, no monthly fees, no cancellation fees, no surprise charges."
+      answer: "Absolutely not. Our platform fee is always 1.5% from the recipient. Processing fees are clearly displayed to donors before they complete their donation. No setup fees, no monthly fees, no surprises."
     },
     {
-      question: "Can I change plans?",
-      answer: "Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately, and you'll only be charged the prorated difference."
+      question: "How do cryptocurrency payments work?",
+      answer: "We support Bitcoin, Ethereum, USDC, and 20+ cryptocurrencies. Crypto payments have the lowest total cost (~3% combined) and are the fastest, most secure option for both donors and recipients."
     },
     {
-      question: "What if my campaign doesn't raise money?",
-      answer: "You pay nothing. Our success-based pricing means you only pay when donations actually come in. No donations = no fees."
-    },
-    {
-      question: "How do developer integrations work?",
-      answer: "Developer API access follows the same pricing structure. Transaction fees are the same (2.4%, 2.1%, or 1.9% based on your plan) and are billed to your organization account."
-    },
-    {
-      question: "How does billing work for teams?",
-      answer: "Plans are billed per organization, not per user. Your entire team can collaborate on campaigns under one billing account with unlimited users."
-    },
-    {
-      question: "What payment methods do you accept?",
-      answer: "We accept all major credit cards, debit cards, bank transfers, and digital wallets including Apple Pay and Google Pay for both campaigns and plan subscriptions."
-    },
-    {
-      question: "Is there a minimum campaign amount?",
-      answer: "No minimum! Whether you're raising $50 or $50,000, our platform works the same way with the same transparent pricing structure."
+      question: "What happens if my campaign doesn't raise money?",
+      answer: "You pay nothing. Our fees only apply when you successfully receive donations. No donations = no fees."
     }
   ];
 
@@ -51,10 +51,10 @@ const PricingFAQ = () => {
             Common Questions
           </Badge>
           <h2 className="text-3xl font-bold font-poppins mb-4">
-            Frequently asked questions
+            Understanding our hybrid pricing model
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to know about our pricing and how kloops.fund works.
+            Everything you need to know about transparent fees and how kloops.fund works.
           </p>
         </div>
 
