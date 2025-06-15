@@ -13,6 +13,7 @@ import PricingPage from "./pages/PricingPage";
 import NotFound from "./pages/NotFound";
 import Templates from "./pages/Templates";
 import HelpCenter from "./pages/HelpCenter";
+import ContactUs from "./pages/ContactUs";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/templates" element={<Templates />} />
           <Route path="/help" element={<HelpCenter />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
