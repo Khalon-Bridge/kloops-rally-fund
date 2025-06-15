@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Heart, User } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
@@ -26,9 +27,6 @@ const Header = () => {
           </Link>
           <Link to="/templates" className="text-muted-foreground hover:text-foreground transition-colors">
             Templates
-          </Link>
-          <Link to="/success-stories" className="text-muted-foreground hover:text-foreground transition-colors">
-            Success stories
           </Link>
         </nav>
 
