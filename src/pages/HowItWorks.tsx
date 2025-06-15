@@ -208,7 +208,7 @@ const HowItWorks = () => {
               <Button size="lg" variant="secondary" onClick={() => navigate('/create')}>
                 Start Fundraising
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:text-kloops-blue bg-blue-800 hover:bg-blue-700">
+              <Button size="lg" variant="outline" className="border-white text-white hover:text-kloops-blue bg-slate-50">
                 View Documentation
               </Button>
             </div>
