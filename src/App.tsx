@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -11,6 +12,7 @@ import HowItWorks from "./pages/HowItWorks";
 import PricingPage from "./pages/PricingPage";
 import NotFound from "./pages/NotFound";
 import Templates from "./pages/Templates";
+import HelpCenter from "./pages/HelpCenter";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +30,7 @@ const App = () => (
           <Route path="/campaign/:id" element={<CampaignPage />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/templates" element={<Templates />} />
+          <Route path="/help" element={<HelpCenter />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
