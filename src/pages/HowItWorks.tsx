@@ -5,77 +5,58 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Heart, Code, Users, Zap, Shield, BarChart3, Smartphone, Globe } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
 const HowItWorks = () => {
   const navigate = useNavigate();
-
-  const personalSteps = [
-    {
-      step: "1",
-      title: "Choose Your Goal",
-      description: "Set a target amount, deadline, or keep it open-ended. Pick from templates or start from scratch.",
-      icon: Heart,
-    },
-    {
-      step: "2", 
-      title: "Customize & Share",
-      description: "Add photos, tell your story, and customize the look. Share via social media, QR codes, or direct links.",
-      icon: Users,
-    },
-    {
-      step: "3",
-      title: "Collect & Manage",
-      description: "Receive donations instantly. Track progress with real-time analytics and thank your supporters.",
-      icon: BarChart3,
-    },
-  ];
-
-  const developerSteps = [
-    {
-      step: "1",
-      title: "Get API Keys", 
-      description: "Sign up, get your API keys, and access our comprehensive documentation and SDKs.",
-      icon: Code,
-    },
-    {
-      step: "2",
-      title: "Integrate in Minutes",
-      description: "Drop in our React component, embed our widget, or use our REST API. Works with any platform.",
-      icon: Zap,
-    },
-    {
-      step: "3",
-      title: "Go Live",
-      description: "Your users can start fundraising immediately. Monitor usage and customize the experience.",
-      icon: Globe,
-    },
-  ];
-
-  const features = [
-    {
-      title: "Instant Setup",
-      description: "From idea to live campaign in under 30 seconds",
-      icon: Zap,
-    },
-    {
-      title: "Mobile Optimized",
-      description: "Perfect experience on any device, any screen size",
-      icon: Smartphone,
-    },
-    {
-      title: "Secure & Trusted",
-      description: "Bank-level security with fraud protection built-in",
-      icon: Shield,
-    },
-    {
-      title: "Real-time Analytics",
-      description: "Track donations, engagement, and campaign performance",
-      icon: BarChart3,
-    },
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const personalSteps = [{
+    step: "1",
+    title: "Choose Your Goal",
+    description: "Set a target amount, deadline, or keep it open-ended. Pick from templates or start from scratch.",
+    icon: Heart
+  }, {
+    step: "2",
+    title: "Customize & Share",
+    description: "Add photos, tell your story, and customize the look. Share via social media, QR codes, or direct links.",
+    icon: Users
+  }, {
+    step: "3",
+    title: "Collect & Manage",
+    description: "Receive donations instantly. Track progress with real-time analytics and thank your supporters.",
+    icon: BarChart3
+  }];
+  const developerSteps = [{
+    step: "1",
+    title: "Get API Keys",
+    description: "Sign up, get your API keys, and access our comprehensive documentation and SDKs.",
+    icon: Code
+  }, {
+    step: "2",
+    title: "Integrate in Minutes",
+    description: "Drop in our React component, embed our widget, or use our REST API. Works with any platform.",
+    icon: Zap
+  }, {
+    step: "3",
+    title: "Go Live",
+    description: "Your users can start fundraising immediately. Monitor usage and customize the experience.",
+    icon: Globe
+  }];
+  const features = [{
+    title: "Instant Setup",
+    description: "From idea to live campaign in under 30 seconds",
+    icon: Zap
+  }, {
+    title: "Mobile Optimized",
+    description: "Perfect experience on any device, any screen size",
+    icon: Smartphone
+  }, {
+    title: "Secure & Trusted",
+    description: "Bank-level security with fraud protection built-in",
+    icon: Shield
+  }, {
+    title: "Real-time Analytics",
+    description: "Track donations, engagement, and campaign performance",
+    icon: BarChart3
+  }];
+  return <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
@@ -108,9 +89,8 @@ const HowItWorks = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {personalSteps.map((step, index) => {
-              const Icon = step.icon;
-              return (
-                <Card key={index} className="relative overflow-hidden">
+            const Icon = step.icon;
+            return <Card key={index} className="relative overflow-hidden">
                   <CardHeader className="text-center">
                     <div className="mx-auto w-12 h-12 rounded-full bg-kloops-blue/10 flex items-center justify-center mb-4">
                       <Icon className="h-6 w-6 text-kloops-blue" />
@@ -127,17 +107,12 @@ const HowItWorks = () => {
                       {step.description}
                     </CardDescription>
                   </CardContent>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
 
           <div className="text-center mt-8">
-            <Button 
-              size="lg" 
-              className="bg-kloops-blue hover:bg-kloops-blue/90"
-              onClick={() => navigate('/create')}
-            >
+            <Button size="lg" className="bg-kloops-blue hover:bg-kloops-blue/90" onClick={() => navigate('/create')}>
               Start Your Campaign
             </Button>
           </div>
@@ -160,9 +135,8 @@ const HowItWorks = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {developerSteps.map((step, index) => {
-              const Icon = step.icon;
-              return (
-                <Card key={index} className="relative overflow-hidden">
+            const Icon = step.icon;
+            return <Card key={index} className="relative overflow-hidden">
                   <CardHeader className="text-center">
                     <div className="mx-auto w-12 h-12 rounded-full bg-kloops-green/10 flex items-center justify-center mb-4">
                       <Icon className="h-6 w-6 text-kloops-green" />
@@ -179,16 +153,12 @@ const HowItWorks = () => {
                       {step.description}
                     </CardDescription>
                   </CardContent>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
 
           <div className="text-center mt-8">
-            <Button 
-              size="lg" 
-              className="bg-kloops-green hover:bg-kloops-green/90 text-white"
-            >
+            <Button size="lg" className="bg-kloops-green hover:bg-kloops-green/90 text-white">
               View API Docs
             </Button>
           </div>
@@ -207,9 +177,8 @@ const HowItWorks = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => {
-              const Icon = feature.icon;
-              return (
-                <Card key={index} className="text-center">
+            const Icon = feature.icon;
+            return <Card key={index} className="text-center">
                   <CardHeader>
                     <div className="mx-auto w-12 h-12 rounded-full bg-gradient-to-br from-kloops-blue to-kloops-green flex items-center justify-center mb-4">
                       <Icon className="h-6 w-6 text-white" />
@@ -221,9 +190,8 @@ const HowItWorks = () => {
                       {feature.description}
                     </CardDescription>
                   </CardContent>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
         </div>
       </section>
@@ -237,18 +205,10 @@ const HowItWorks = () => {
               Join thousands who are already using kloops to make fundraising effortless.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                variant="secondary"
-                onClick={() => navigate('/create')}
-              >
+              <Button size="lg" variant="secondary" onClick={() => navigate('/create')}>
                 Start Fundraising
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-kloops-blue"
-              >
+              <Button size="lg" variant="outline" className="border-white text-white hover:text-kloops-blue bg-blue-800 hover:bg-blue-700">
                 View Documentation
               </Button>
             </div>
@@ -257,8 +217,6 @@ const HowItWorks = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default HowItWorks;
