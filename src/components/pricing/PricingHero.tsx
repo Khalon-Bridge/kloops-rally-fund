@@ -33,7 +33,7 @@ const PricingHero = () => {
               </div>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="text-center space-y-2">
-                  <div className="text-lg font-semibold text-kloops-blue">kloops.fund</div>
+                  <div className="text-lg font-semibold text-kloops-blue">kloop.fund</div>
                   <div className="text-2xl font-bold text-kloops-green">$1,000 → $985</div>
                   <div className="text-sm text-muted-foreground">Recipient keeps 98.5%</div>
                 </div>

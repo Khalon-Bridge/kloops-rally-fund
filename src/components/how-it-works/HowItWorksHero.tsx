@@ -5,10 +5,10 @@ const HowItWorksHero = () => {
       <div className="container">
         <div className="text-center max-w-3xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold font-poppins gradient-text">
-            How Kloops Works
+            How Kloop Works
           </h1>
           <p className="text-xl text-muted-foreground">
-            Whether you're raising money for a cause or building an app, kloops makes fundraising simple and powerful.
+            Whether you're raising money for a cause or building an app, kloop makes fundraising simple and powerful.
           </p>
         </div>
       </div>

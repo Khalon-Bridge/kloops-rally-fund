@@ -32,7 +32,7 @@ const HowItWorksFeatures = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold font-poppins mb-4">Built for Everyone</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Whether you're a complete beginner or an experienced developer, kloops has the tools you need.
+            Whether you're a complete beginner or an experienced developer, kloop has the tools you need.
           </p>
         </div>
 

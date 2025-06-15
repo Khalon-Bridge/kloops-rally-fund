@@ -11,7 +11,7 @@ const HowItWorksCTA = () => {
         <div className="text-center max-w-3xl mx-auto space-y-6 text-white">
           <h2 className="text-3xl font-bold font-poppins">Ready to Get Started?</h2>
           <p className="text-xl opacity-90">
-            Join thousands who are already using kloops to make fundraising effortless.
+            Join thousands who are already using kloop to make fundraising effortless.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" onClick={() => navigate('/create')}>
