@@ -78,7 +78,7 @@ const ContactUs = () => {
             Get in touch
           </h1>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-            Have questions about kloops.fund? Need help with your campaign? Our support team is here to help you succeed.
+            Have questions about kloop.fund? Need help with your campaign? Our support team is here to help you succeed.
           </p>
         </div>
       </section>

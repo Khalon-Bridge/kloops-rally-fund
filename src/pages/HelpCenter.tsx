@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -75,7 +74,7 @@ const HelpCenter = () => {
 
   const faqItems = [
     {
-      question: "How much does it cost to use kloops.fund?",
+      question: "How much does it cost to use kloop.fund?",
       answer: "Recipients keep 98.5% of donations (1.5% platform fee). Donors pay actual processing costs which vary by payment method: crypto (~1.5%), cards (~2.9% + $0.30), bank transfer ($0.50 flat)."
     },
     {
@@ -138,7 +137,7 @@ const HelpCenter = () => {
             How can we help you?
           </h1>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-            Find answers to common questions, learn how to use kloops.fund, and get the support you need.
+            Find answers to common questions, learn how to use kloop.fund, and get the support you need.
           </p>
           
           {/* Search Bar */}
@@ -159,7 +158,7 @@ const HelpCenter = () => {
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold font-poppins mb-4">
-              Getting started with kloops.fund
+              Getting started with kloop.fund
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Launch your first campaign in minutes with our simple 4-step process.
@@ -235,7 +234,7 @@ const HelpCenter = () => {
               Frequently asked questions
             </h2>
             <p className="text-muted-foreground">
-              Quick answers to the most common questions about kloops.fund.
+              Quick answers to the most common questions about kloop.fund.
             </p>
           </div>
 

@@ -1,3 +1,4 @@
+
 import { Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -12,7 +13,7 @@ const Footer = () => {
                 <Heart className="h-3 w-3 text-white" />
               </div>
               <span className="text-lg font-poppins font-bold gradient-text">
-                kloops.fund
+                kloop.fund
               </span>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -51,7 +52,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 Kloops Fund Inc. All rights reserved.</p>
+          <p>&copy; 2024 Kloop Fund Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>
