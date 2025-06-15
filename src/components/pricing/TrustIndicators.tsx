@@ -6,27 +6,27 @@ import { Users, DollarSign, Shield, Clock } from "lucide-react";
 const TrustIndicators = () => {
   const stats = [
     {
-      icon: Users,
-      value: "10,000+",
-      label: "Active campaigns",
+      icon: Shield,
+      value: "Bank-level",
+      label: "Security & encryption",
       color: "kloops-blue"
-    },
-    {
-      icon: DollarSign,
-      value: "$5M+",
-      label: "Successfully raised",
-      color: "kloops-green"
     },
     {
       icon: Clock,
       value: "99.9%",
       label: "Uptime guarantee",
+      color: "kloops-green"
+    },
+    {
+      icon: DollarSign,
+      value: "2.4%",
+      label: "Industry-leading rates",
       color: "kloops-orange"
     },
     {
-      icon: Shield,
-      value: "Bank-level",
-      label: "Security & encryption",
+      icon: Users,
+      value: "24/7",
+      label: "Customer support",
       color: "kloops-blue"
     }
   ];
@@ -36,13 +36,13 @@ const TrustIndicators = () => {
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4 text-kloops-green border-kloops-green">
-            Trusted Platform
+            Built for Trust
           </Badge>
           <h2 className="text-3xl font-bold font-poppins mb-4">
-            Join thousands of successful fundraisers
+            Enterprise-grade platform from day one
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Built with enterprise-grade security and reliability that you can trust with your campaigns.
+            Built with enterprise-grade security and reliability. We've designed every component for scale and trust.
           </p>
         </div>
 
@@ -78,7 +78,7 @@ const TrustIndicators = () => {
           </Badge>
           <Badge variant="outline" className="px-4 py-2">
             <Shield className="h-4 w-4 mr-2" />
-            SOC 2 Certified
+            SOC 2 Ready
           </Badge>
         </div>
       </div>

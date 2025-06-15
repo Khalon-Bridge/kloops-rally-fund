@@ -14,7 +14,7 @@ const PricingCTA = () => {
               Ready to start fundraising?
             </h2>
             <p className="text-xl opacity-90">
-              Join thousands who've chosen the most transparent, affordable fundraising platform.
+              Join the next generation of fundraising. Transparent pricing, powerful features, zero risk.
             </p>
           </div>
 

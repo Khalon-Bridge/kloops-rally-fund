@@ -13,7 +13,7 @@ const DualCTA = () => {
           <div className="text-center space-y-6">
             <h3 className="text-2xl font-bold font-poppins">Ready to start fundraising?</h3>
             <p className="text-muted-foreground">
-              Join thousands who've raised millions for causes that matter. Setup takes less than a minute.
+              The modern platform built for success. Setup takes less than a minute, zero upfront costs.
             </p>
             <Button 
               size="lg" 

@@ -13,10 +13,10 @@ const ComparisonTable = () => {
             Platform Comparison
           </Badge>
           <h2 className="text-3xl font-bold font-poppins mb-4">
-            How we compare to the competition
+            How we compare to established platforms
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            See why thousands choose kloops.fund over other fundraising platforms.
+            Built with modern technology and fair pricing from the ground up.
           </p>
         </div>
 
@@ -84,15 +84,15 @@ const ComparisonTable = () => {
                   <TableCell className="text-center">Limited</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Custom branding</TableCell>
+                  <TableCell className="font-medium">Modern tech stack</TableCell>
                   <TableCell className="text-center bg-kloops-blue/5">
-                    <div className="text-sm">✅ (Premium)</div>
+                    <Check className="h-5 w-5 text-kloops-green mx-auto" />
                   </TableCell>
                   <TableCell className="text-center">
                     <X className="h-5 w-5 text-red-500 mx-auto" />
                   </TableCell>
                   <TableCell className="text-center">
-                    <Check className="h-5 w-5 text-kloops-green mx-auto" />
+                    <X className="h-5 w-5 text-red-500 mx-auto" />
                   </TableCell>
                 </TableRow>
               </TableBody>

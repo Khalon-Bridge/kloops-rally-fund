@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className="text-center space-y-8 max-w-5xl mx-auto">
           <Badge className="bg-kloops-green/10 text-kloops-green border-kloops-green/20">
             <Zap className="w-3 h-3 mr-1" />
-            30-second integration
+            Launch in under 60 seconds
           </Badge>
           
           <h1 className="text-5xl md:text-7xl font-bold font-poppins leading-tight">
