@@ -9,7 +9,7 @@ import {
   MessageCircle, 
   Mail, 
   Clock,
-  MapPin,
+  Calendar,
   Phone,
   HelpCircle
 } from "lucide-react";
@@ -61,19 +61,6 @@ const ContactUs = () => {
       description: "Speak directly with our team",
       details: "+1 (555) 123-4567 • Available during business hours",
       action: "Call Now"
-    }
-  ];
-
-  const officeLocations = [
-    {
-      city: "San Francisco",
-      address: "123 Mission Street, Suite 400",
-      zipCode: "San Francisco, CA 94105"
-    },
-    {
-      city: "New York",
-      address: "456 Broadway, Floor 15",
-      zipCode: "New York, NY 10013"
     }
   ];
 
@@ -258,36 +245,38 @@ const ContactUs = () => {
         </div>
       </section>
 
-      {/* Office Locations */}
+      {/* Schedule a Call */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold font-poppins mb-4">
-              Our offices
+              Schedule a call
             </h2>
             <p className="text-muted-foreground">
-              Visit us at one of our locations.
+              Book a consultation with our team to discuss your fundraising goals.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            {officeLocations.map((office, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <div className="flex items-center space-x-2">
-                    <MapPin className="h-5 w-5 text-kloops-blue" />
-                    <CardTitle className="text-lg">{office.city}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    {office.address}<br />
-                    {office.zipCode}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <Card className="max-w-md mx-auto text-center">
+            <CardHeader>
+              <Calendar className="h-12 w-12 text-kloops-blue mx-auto mb-4" />
+              <CardTitle>1-on-1 Consultation</CardTitle>
+              <CardDescription>
+                Get personalized advice and guidance for your fundraising campaign
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="text-sm text-muted-foreground space-y-1">
+                <p>• 30-minute consultation</p>
+                <p>• Campaign strategy discussion</p>
+                <p>• Platform walkthrough</p>
+                <p>• Q&A with our experts</p>
+              </div>
+              <Button className="bg-kloops-blue hover:bg-kloops-blue/90 w-full">
+                Schedule Your Call
+              </Button>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
